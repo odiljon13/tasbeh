@@ -1,0 +1,73 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background: #0f172a; 
+}
+
+.tasbeh-device {
+  position: relative;
+  display: inline-block; 
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.tasbeh-bg {
+  display: block;
+  width: 320px; 
+  height: auto;
+  pointer-events: none; 
+}
+
+/* Ekrandagi raqam rasmning LCD ekraniga tushadi */
+.tasbeh-screen {
+  position: absolute;
+  top: 36%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  text-align: center; 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111; 
+  letter-spacing: 2px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Katta BOSISH tugmasi uchun sal ko'rinib turadigan maydon */
+.btn-count {
+  position: absolute;
+  top: 71%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.btn-reset {
+  position: absolute;
+  top: 52%; 
+  left: 32%; /* Rasmning aniq RESET tugmasi turgan joyiga surildi */
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
